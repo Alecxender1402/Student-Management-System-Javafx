@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShowResultController">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" text="RESULT" textAlignment="CENTER">
+         <font>
+            <Font name="Microsoft Sans Serif" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="285.0" layoutY="49.0" startX="-100.0" />
+      <Label layoutX="181.0" layoutY="49.0" prefHeight="32.0" prefWidth="81.0" text="Student ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="stuid" layoutX="273.0" layoutY="49.0" prefHeight="32.0" prefWidth="38.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="399.0" endY="1.52587890625E-5" layoutX="115.0" layoutY="78.0" startX="-115.00000762939453" startY="1.52587890625E-5" />
+      <Label layoutX="136.0" layoutY="139.0" text="OOPJ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="177.0" text="OS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="210.0" text="COA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="244.0" text="PEM">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="282.0" text="DM">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="102.0" prefHeight="20.0" prefWidth="56.0" text="Subject">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="102.0" prefHeight="20.0" prefWidth="56.0" text="Mark">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="oopmark" layoutX="229.0" layoutY="139.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="osmark" layoutX="229.0" layoutY="177.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="coamark" layoutX="229.0" layoutY="210.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pemmark" layoutX="229.0" layoutY="244.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dmmark" layoutX="229.0" layoutY="282.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="102.0" prefHeight="20.0" prefWidth="56.0" text="Grade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="oopg" layoutX="325.0" layoutY="139.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="osg" layoutX="325.0" layoutY="177.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="coag" layoutX="325.0" layoutY="210.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pemg" layoutX="325.0" layoutY="244.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dmg" layoutX="325.0" layoutY="282.0" prefHeight="20.0" prefWidth="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="285.0" layoutY="131.0" startX="-165.49998474121094" startY="1.52587890625E-5" />
+      <Line endX="100.0" layoutX="285.0" layoutY="93.0" startX="-165.49998474121094" startY="1.52587890625E-5" />
+      <Line endX="-165.2070770263672" endY="209.79998779296875" layoutX="284.0" layoutY="99.0" startX="-165.2070770263672" startY="-5.9999847412109375" />
+      <Line endX="-165.2070770263672" endY="209.79998779296875" layoutX="551.0" layoutY="98.0" startX="-165.2070770263672" startY="-5.9999847412109375" />
+      <Line endX="100.0" layoutX="285.0" layoutY="309.0" startX="-165.49998474121094" startY="1.52587890625E-5" />
+      <Label layoutX="175.0" layoutY="326.0" prefHeight="20.0" prefWidth="34.0" text="SPI:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="spi" layoutX="245.0" layoutY="326.0" prefHeight="20.0" prefWidth="34.0" style="-fx-background-color: light blue;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

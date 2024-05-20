@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="314.0" layoutY="111.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="10.0" layoutY="127.0" prefHeight="600.0" prefWidth="219.0" styleClass="main-bg" stylesheets="@MainForm.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              
+                              <Label fx:id="greet_username" layoutX="53.0" layoutY="74.0" text="Welcome, Admin" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="dashboard_btn" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@MainForm.css" text="Dashboard">
+                                
+                              </Button>
+                              <Button fx:id="addStudent_btn" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#addstudent" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@MainForm.css" text="Add Student">
+                                 
+                              </Button>
+                              <Button fx:id="addTeacher_btn" layoutX="10.0" layoutY="242.0" mnemonicParsing="false" onAction="#addteacher" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@MainForm.css" text="Add Teacher">
+                                 
+                              </Button>
+                              <Line endX="100.0" layoutX="110.0" layoutY="116.0" startX="-100.0" stroke="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <top>
+                  <AnchorPane prefHeight="37.0" prefWidth="1100.0" stylesheets="@MainForm.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="14.0" layoutY="8.0" text="Dashboard Form" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="main-bg" />
+                     </styleClass>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="563.0" prefWidth="881.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane fx:id="dashboard_form" layoutX="13.0" layoutY="14.0" prefHeight="563.0" prefWidth="881.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="147.0" prefWidth="856.0" stylesheets="@MainForm.css" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="1050.0" stylesheets="@MainForm.css">
+                                             <children>
+                                                <AnchorPane layoutX="118.0" layoutY="15.0" prefHeight="108.0" prefWidth="243.0" stylesheets="@MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="radius" />
+                                                      <String fx:value="main-bg" />
+                                                   </styleClass>
+                                                   <children>
+                                                     
+                                                      <Label layoutX="140.0" layoutY="24.0" text="Total Students" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="dashboard_TS" alignment="CENTER_RIGHT" layoutX="137.0" layoutY="64.0" prefHeight="30.0" prefWidth="86.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="469.0" layoutY="15.0" prefHeight="108.0" prefWidth="243.0" stylesheets="@MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="radius" />
+                                                      <String fx:value="main-bg" />
+                                                   </styleClass>
+                                                   <children>
+                                                      
+                                                      <Label layoutX="140.0" layoutY="19.0" text="Total Teachers" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="dashboard_TT" alignment="CENTER_RIGHT" layoutX="137.0" layoutY="59.0" prefHeight="30.0" prefWidth="86.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="addStudent_form" layoutX="10.0" layoutY="10.0" prefHeight="573.0" prefWidth="891.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="15.0" layoutY="18.0" prefHeight="527.0" prefWidth="852.0" stylesheets="@MainForm.css" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="18.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TableView fx:id="addStudent_tableView" layoutX="9.0" layoutY="14.0" prefHeight="438.0" prefWidth="835.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+                                            <columns>
+                                              <TableColumn fx:id="addStudent_col_studentid" prefWidth="98.00003850460052" text="Student Id" />
+                                              <TableColumn fx:id="addStudent_col_Username" prefWidth="170.66667938232422" text="Username" />
+                                                <TableColumn fx:id="addStudent_col_Email" prefWidth="195.9999542236328" text="Email" />
+                                                <TableColumn fx:id="addStudent_col_Password" prefWidth="140.66671752929688" text="Password" />
+                                                <TableColumn fx:id="addStudent_col_Name" prefWidth="238.0" text="Name" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                          <Button fx:id="addStudent_deleteBtn" layoutX="611.0" layoutY="477.0" mnemonicParsing="false" onAction="#addStudentDeleteBtn" prefHeight="36.0" prefWidth="99.0" styleClass="btn" stylesheets="@MainForm.css" text="Delete" AnchorPane.bottomAnchor="13.666666666666629" AnchorPane.rightAnchor="140.9999999999999" />
+                                          <Button fx:id="addStudent_addBtn" layoutX="486.0" layoutY="477.0" mnemonicParsing="false" onAction="#addStudentAddBtn" prefHeight="36.0" prefWidth="99.0" styleClass="btn" stylesheets="@MainForm.css" text="Add" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="267.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="addTeacher_form" layoutX="118.0" layoutY="67.0" prefHeight="563.0" prefWidth="881.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="281.0" prefWidth="853.0" stylesheets="@MainForm.css" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                       <children>
+                                          <TableView fx:id="addTeacher_tableView" layoutX="14.0" layoutY="14.0" prefHeight="253.0" prefWidth="825.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                            <columns>
+                                              <TableColumn fx:id="addTeacher_col_teacherID" prefWidth="75.0" text="Teacher ID" />
+                                              <TableColumn fx:id="addTeacher_col_name" prefWidth="243.3332977294922" text="Name" />
+                                                <TableColumn fx:id="addTeacher_col_gender" prefWidth="207.33340454101562" text="Gender" />
+                                                <TableColumn fx:id="addTeacher_col_experience" prefWidth="140.6666259765625" text="Experience" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="14.0" layoutY="318.0" prefHeight="231.0" prefWidth="853.0" stylesheets="@MainForm.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                       <children>
+                                          <Label layoutX="55.0" layoutY="30.0" text="Teacher ID:" />
+                                          <TextField fx:id="addTeacher_teacherID" layoutX="119.0" layoutY="26.0" prefHeight="25.0" prefWidth="112.0" />
+                                          <Label layoutX="56.0" layoutY="64.0" text="Full Name:" />
+                                          <TextField fx:id="addTeacher_fullName" layoutX="124.0" layoutY="60.0" prefHeight="25.0" prefWidth="154.0" />
+                                          <Label layoutX="72.0" layoutY="99.0" text="Gender:" />
+                                          <ComboBox fx:id="addTeacher_gender" layoutX="126.0" layoutY="95.0" prefWidth="150.0" promptText="Choose..." />
+                                          <Label alignment="CENTER_RIGHT" layoutX="336.0" layoutY="30.0" text="Experience:" />
+                                          <TextField fx:id="addTeacher_experience" layoutX="404.0" layoutY="26.0" prefHeight="25.0" prefWidth="154.0" />
+                                          <Button fx:id="addTeacher_addBtn" layoutX="366.0" layoutY="181.0" mnemonicParsing="false" onAction="#addTeacher_addbtn" prefHeight="36.0" prefWidth="98.0" styleClass="btn" stylesheets="@MainForm.css" text="Add" />
+                                          <Button fx:id="addTeacher_clearBtn" layoutX="481.0" layoutY="181.0" mnemonicParsing="false" onAction="#clearbtn" prefHeight="36.0" prefWidth="98.0" styleClass="btn" stylesheets="@MainForm.css" text="Clear" />
+                                          <Button fx:id="addTeacher_deleteBtn" layoutX="596.0" layoutY="181.0" mnemonicParsing="false" onAction="#addTeacherDeleteBtn" prefHeight="36.0" prefWidth="98.0" styleClass="btn" stylesheets="@MainForm.css" text="Delete" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

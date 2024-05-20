@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentDetailController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="main-bg" stylesheets="@MainForm.css">
+         <children>
+            <Label layoutX="161.0" layoutY="57.0" text="Student ID:" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="162.0" layoutY="113.0" text="Username:" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="225.0" text="email:" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="168.0" text="Name:" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Student_id" layoutX="254.0" layoutY="53.0" prefHeight="30.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@MainForm.css" />
+            <Label fx:id="Student_username" layoutX="254.0" layoutY="109.0" prefHeight="30.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@MainForm.css" />
+            <Label fx:id="Student_name" layoutX="254.0" layoutY="164.0" prefHeight="30.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@MainForm.css" />
+            <Label fx:id="Student_email" layoutX="254.0" layoutY="221.0" prefHeight="30.0" prefWidth="171.0" styleClass="nav-btn" stylesheets="@MainForm.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
